@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocDirect - Professional Medical Consultations</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">DocDirect</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="book-btn" onclick="scrollToBooking()">Book Consultation</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Medical Consultations</h1>
+                <p>Connect with certified healthcare professionals from the comfort of your home. Get expert medical advice, prescriptions, and follow-up care through our secure platform.</p>
+                <div class="cta-buttons">
+                    <a href="#booking" class="cta-primary">Book Consultation</a>
+                    <a href="#services" class="cta-secondary">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <div class="container about-content">
+        <div class="about-text">
+            <h2 class="section-title">About Us</h2>
+            <p>
+                At <strong>DocDirect</strong>, our mission is to make healthcare more accessible, affordable, and convenient for everyone.
+                We connect users to professional medical consultants, mental health experts, and wellness services 
+                through our secure digital platform. Our AI-powered tools enhance user experience by providing 
+                24/7 support, simplifying booking, and promoting personalized care.
+            </p>
+            <p>
+                Whether you need a routine check-up, ongoing treatment, or emotional support, DocDirect ensures quality 
+                care at your fingertips — anytime, anywhere.
+            </p>
+        </div>
+        <div class="about-images">
+            <img src="images/addphotohere.jpg" alt="Team working together">
+            <img src="images/addphotohere1.jpg" alt="Doctor with patient">
+            <img src="images/addphotohere2.jpg" alt="Telemedicine consultation">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose DocDirect?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Assistance</h3>
+                    <p>Our intelligent chatbot helps you navigate services, schedule appointments, and get instant answers to common health questions 24/7.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Easy Online Booking</h3>
+                    <p>Schedule consultations with our intuitive booking system. Choose your preferred doctor, time slot, and consultation type in just a few clicks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Your health information is protected with end-to-end encryption and HIPAA-compliant security measures ensuring complete privacy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💊</div>
+                    <h3>Digital Prescriptions</h3>
+                    <p>Receive electronic prescriptions that can be sent directly to your preferred pharmacy for convenient pickup or delivery.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Follow-up Care</h3>
+                    <p>Automated follow-up reminders and easy rescheduling ensure continuity of care and better health outcomes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-Platform Access</h3>
+                    <p>Access your healthcare from any device - desktop, tablet, or mobile. Your health information syncs seamlessly across all platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <video src="videos/addvideos.mp4" autoplay muted loop playsinline></video>
+                <h3>General Consultation</h3>
+                <p>Comprehensive health assessments and medical advice for common conditions and concerns.</p>
+            </div>
+
+            <div class="service-card">
+                <video src="videos/addvideos1.mp4" autoplay muted loop playsinline></video>
+                <h3>Specialist Referrals</h3>
+                <p>Connect with specialized healthcare providers for complex medical conditions and treatments.</p>
+            </div>
+
+            <div class="service-card">
+                <video src="videos/addvideos2.mp4" autoplay muted loop playsinline></video>
+                <h3>Mental Health Support</h3>
+                <p>Professional counseling and psychiatric services for mental health and wellness support.</p>
+            </div>
+
+            <div class="service-card">
+                <video src="videos/addvideos3.mp4" autoplay muted loop playsinline></video>
+                <h3>Chronic Care Management</h3>
+                <p>Ongoing monitoring and management of chronic conditions like diabetes, hypertension, and more.</p>
+            </div>
+
+            <div class="service-card">
+                <video src="videos/addvideos4.mp4" autoplay muted loop playsinline></video>
+                <h3>Urgent Care</h3>
+                <p>Quick access to medical professionals for urgent but non-emergency health concerns.</p>
+            </div>
+
+            <div class="service-card">
+                <video src="videos/addvideos5.mp4" autoplay muted loop playsinline></video>
+                <h3>Health Screenings</h3>
+                <p>Preventive health screenings and wellness checks to maintain optimal health.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Consultation</h2>
+            <form class="booking-form" onsubmit="submitBooking(event)">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Type</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="general">General Consultation</option>
+                        <option value="specialist">Specialist Referral</option>
+                        <option value="mental">Mental Health Support</option>
+                        <option value="chronic">Chronic Care Management</option>
+                        <option value="urgent">Urgent Care</option>
+                        <option value="screening">Health Screening</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="symptoms">Symptoms/Concerns (Optional)</label>
+                    <textarea id="symptoms" name="symptoms" rows="4" placeholder="Briefly describe your symptoms or health concerns..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Book Consultation</button>
+            </form>
+        </div>
+    </section>
+
+        <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p>If you have any questions, feedback, or need help, feel free to reach out. We're here to help!</p>
+            <form class="contact-form" onsubmit="submitContact(event)">
+                <div class="form-group">
+                    <label for="contactName">Your Name</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Your Email</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DocDirect</h3>
+                    <p>Providing accessible, professional healthcare consultations through innovative technology and compassionate care.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">General Consultation</a></li>
+                        <li><a href="#">Specialist Care</a></li>
+                        <li><a href="#">Mental Health</a></li>
+                        <li><a href="#">Urgent Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ support@docdirect.com</li>
+                        <li>🏥 Available 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DocDirect. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>DocDirect Assistant</h3>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot">
+                    Hello! I'm your DocDirect AI assistant. How can I help you today? I can help you:
+                    <br>• Book consultations
+                    <br>• Explain our services
+                    <br>• Answer health questions
+                    <br>• Schedule follow-ups
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleChatKeypress(event)">
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
